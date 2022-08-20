@@ -100,8 +100,8 @@ const VideoDashboard = (props) => {
                 </div>
                 <div style={{ width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
                     <iframe width="100%" height="500px"
-                        src="https://www.youtube.com/embed/Y4qO9unerGs"
-                        title="YouTube video player" frameborder="0"
+                        src={video.URL}
+                        title={video.Title} frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
