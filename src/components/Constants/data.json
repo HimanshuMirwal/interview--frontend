@@ -1,0 +1,58 @@
+{
+    "title-course":"Introduction to machine learning",
+    "lectures":[{
+        "lecture-title":"Introduction to machine learning",
+        "video-urls":[{
+            "name":"What is machine learning",
+            "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+        }]},
+        {
+            "lecture-title":"Concept of machine learning",
+            "videos":[{
+              "name":"Rent cost of flat", 
+              "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+            },{
+                "name":"Linear regression", 
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              },{
+                "name":"polymer regression", 
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              }]
+        },
+        {
+            "lecture-title":"Application of machine learning",
+            "videos":[{
+              "name":"Email spam filter", 
+              "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+            },{
+                "name":"Recommendation of App", 
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              }]
+        },
+        {
+            "lecture-title":"Neural network and deep learning",
+            "videos":[{
+              "name":"Application of ML in college Admission", 
+              "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+            },{
+                "name":"Application of ML in college Admission 2",  
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              },{
+                "name":"Neural Network", 
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              },{
+                "name":"recognizing handwriting digit",
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              },{
+                "name":"recognizing handwriting digit 2",
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+              }]
+        },{
+            "lecture-title":"Application of deep learning",
+            "video-urls":[{
+                "name":"Application of deep learning",
+                "video-url":"https://www.youtube.com/embed/Y4qO9unerGs"
+            }]
+        }
+        ]
+}
