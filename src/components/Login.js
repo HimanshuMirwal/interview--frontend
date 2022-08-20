@@ -22,7 +22,7 @@ const Login = () => {
                 }else{
                     alert(data.data.message+" "+data.data.name.toUpperCase())
                     localStorage.setItem("CURRENT_USER",JSON.stringify({email:userEmail, name:data.data.name}))
-                    window.location.href="http://localhost:3000/"
+                    window.location.href="https://interview--frontend.herokuapp.com/"
                 }
             }).catch(Err=>alert(Err))
     }

@@ -125,7 +125,7 @@ const List = (props)=>{
       <div class="card card-body">
             {
                 value.videoUrls.map((lecture, indexList)=>{
-                    return <p  onClick={()=>window.location.href="http://localhost:3000/lecture"+id} style={{color:Colors.Gray}} >{indexList+1+". "+lecture.name}</p>
+                    return <p  onClick={()=>window.location.href="https://interview--frontend.herokuapp.com/lecture"+id} style={{color:Colors.Gray}} >{indexList+1+". "+lecture.name}</p>
                 })
             }
       </div>

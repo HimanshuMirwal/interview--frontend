@@ -85,7 +85,7 @@ const Form = (props) => {
                     localStorage.setItem("User", (JSON.stringify(NewUsers)))
                     localStorage.setItem("current_user",(JSON.stringify(User)))
                     alert("Detail Updated");
-                    window.location.href="http://localhost:3000/"
+                    window.location.href="https://interview--frontend.herokuapp.com/"
             }else {
                 alert("please enter correct name.")
             }
@@ -118,7 +118,7 @@ const Form = (props) => {
                                 localStorage.setItem("User", (JSON.stringify(NewUsers)))
                                 localStorage.setItem("current_user",(JSON.stringify(User)))
                                 alert("Detail Updated");
-                                window.location.href="http://localhost:3000/"
+                                window.location.href="https://interview--frontend.herokuapp.com/"
                         }
                     }
                 } else {
@@ -211,7 +211,7 @@ const Form = (props) => {
                             localStorage.removeItem("CURRENT_USER");
                             localStorage.removeItem("CURRENT_USER");
                             localStorage.removeItem("CURRENT_USER");
-                            window.location.href = "http://localhost:3000/login"
+                            window.location.href = "https://interview--frontend.herokuapp.com/login"
                         }}>Logout</label>
                     </div>
 

@@ -3,7 +3,7 @@ import { Colors } from "../Constants/Colors";
 
 const LogoIcon = () => {
     return (
-       <a href="http://localhost:3000/" style={{textDecoration:"none"}}> <div style={{
+       <a href="https://interview--frontend.herokuapp.com/" style={{textDecoration:"none"}}> <div style={{
            display:"flex",
            justifyContent:"center",
            alignItems:"center",
