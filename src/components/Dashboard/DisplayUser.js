@@ -7,7 +7,7 @@ const DisplayUser = (props) => {
     const [post, setPost] = useState([]);
     const [showForm, setShowForm] = useState(false);
     useState(() => {
-        Axios.get("http://localhost:5000/descussion")
+        Axios.get("https://interview--backend.herokuapp.com/descussion")
             .then(data => {
                 console.log(data.data)
                 setPost(data.data)
@@ -15,6 +15,7 @@ const DisplayUser = (props) => {
             .catch(Err => alert(Err))
     }, [])
     return (
+        (Object.keys(post).length===0)?<h4 style={{color:Colors.Blue}}>Loading...</h4>:
         <div style={{
             height: "100%",
             width: "100%",
@@ -73,10 +74,10 @@ const DisplayUser = (props) => {
                     margin: "auto"
                 }}
                     onClick={() => {
-                        Axios.post("http://localhost:5000/post-descussion", { email, description })
+                        Axios.post("https://interview--backend.herokuapp.com/post-descussion", { email, description })
                             .then(data =>{
                                  alert("Send")
-                                 Axios.get("http://localhost:5000/descussion")
+                                 Axios.get("https://interview--backend.herokuapp.com/descussion")
             .then(data => {
                 console.log(data.data)
                 setPost(data.data)

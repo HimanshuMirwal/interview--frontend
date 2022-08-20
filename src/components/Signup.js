@@ -36,9 +36,12 @@ const Signup = () =>{
     }
     function Continue() {
         if(error.name && error.email && error.password){
-            Axios.post("http://localhost:5000/signup-user",{email:userEmail,name:userName,password:userPassword})
+            Axios.post("https://interview--backend.herokuapp.com/signup-user",{email:userEmail,name:userName,password:userPassword})
             .then(data=>{
                 alert("Account Created you may login now.")
+                setEmail("")
+                setName("")
+                setPassword("")
             }).catch(Err=>alert(Err))
         }else{
             alert("please Check the Details you entered.")

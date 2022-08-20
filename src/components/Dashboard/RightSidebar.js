@@ -21,7 +21,7 @@ const ListElement = (props) => {
     const [ChoosenCourse, setChosenCourse] = useState(null);
     const [listOfCourses, setListOfCourses] = useState([]);
     useEffect(() => {
-        Axios.get("http://localhost:5000/courses/")
+        Axios.get("https://interview--backend.herokuapp.com/courses/")
             .then(data => {
                 setDataArray(data.data)
                 const res = data.data.map(value=> {
@@ -32,7 +32,9 @@ const ListElement = (props) => {
                 setListOfCourses(res)
             })
     }, [])
-    return (<div style={{
+    return (
+    (Object.keys(DataArray).length===0)?<h4 style={{color:Colors.Blue}}>Loading....</h4>
+    :<div style={{
         height:"auto",
         width:"100%",
         overflow:"scroll",

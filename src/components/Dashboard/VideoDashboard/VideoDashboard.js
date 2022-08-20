@@ -13,7 +13,7 @@ const VideoDashboard = (props) => {
     });
     console.log(id)
     useEffect(() => {
-        Axios.get("http://localhost:5000/coursesbyid" + id)
+        Axios.get("https://interview--backend.herokuapp.com/coursesbyid" + id)
             .then(value => {
                 console.log(value.data[0].lectures)
                 setVideo({
