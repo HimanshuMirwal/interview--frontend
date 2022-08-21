@@ -5,7 +5,7 @@ import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
 
 const DashBoard = () => {
-    const [activeLink, setActiveLink] = useState(Title.Discussion);
+    const [activeLink, setActiveLink] = useState(Title.Courses);
     function ChanageActiveLink(Name){
         setActiveLink(Name)
     }

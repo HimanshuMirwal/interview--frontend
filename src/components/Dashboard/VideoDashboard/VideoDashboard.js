@@ -4,28 +4,27 @@ import { useParams } from "react-router-dom";
 import { Colors } from "../../Constants/Colors";
 import TopNavbar from "../../Helper/TopNavbar"
 const VideoDashboard = (props) => {
-    const { id } = useParams();
+    const { id, title, subtitle, videoData } = useParams();
+    const videoDataForInitialization = atob(videoData)
     const [data, setData] = useState([])
     const [video, setVideo] = useState({
-        Title: "",
-        subTitle: "",
-        URL: ""
+        Title: title,
+        subTitle: subtitle,
+        URL: videoDataForInitialization
     });
-    console.log(id)
+    console.log(id, title, subtitle, videoDataForInitialization)
     useEffect(() => {
         Axios.get("https://interview--backend.herokuapp.com/coursesbyid" + id)
             .then(value => {
                 console.log(value.data[0].lectures)
-                setVideo({
-                    Title: value.data[0].lectures[0].lectureTitle,
-                    subTitle: value.data[0].lectures[0].videoUrls[0].name,
-                    URL: value.data[0].lectures[0].videoUrls[0].videoUrl
-                })
-                console.log({
-                    Title: value.data[0].lectures[0].lectureTitle,
-                    subTitle: value.data[0].lectures[0].videoUrls[0].name,
-                    URL: value.data[0].lectures[0].videoUrls[0].videoUrl
-                })
+                if(!title){
+                    console.log("setting")
+                    setVideo({
+                        Title: value.data[0].lectures[0].lectureTitle,
+                        subTitle: value.data[0].lectures[0].videoUrls[0].name,
+                        URL: value.data[0].lectures[0].videoUrls[0].videoUrl
+                    })
+                }
                 setData(value.data[0].lectures)
             }).catch(Err => console.log(Err))
     }, [])
